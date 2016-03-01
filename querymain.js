@@ -159,6 +159,7 @@ $.ajax({
 	$("#playlist").html(""); // clear old elements before .append new ones
 	$("#playlist").append('<br>'+playlist[0]+'<br>' +playlist[1]+ '<br>' +playlist[2]+ '<br>' +playlist[3]+'<br>');
 
+
 		}, // end function(xml)
 		
 		error: function(){ 
