@@ -2,6 +2,8 @@
  * A classy way to play HTML5 videos on a loop without gaps
  * @author LifeMirror http://www.lifemirror.org/
  * @constructor
+ * 
+ * modifications done by Project_MetaJS
  */
 function LifemirrorPlayer() {}
 var Lifemirror = {};
@@ -22,13 +24,19 @@ LifemirrorPlayer.prototype.initialise = function(playlist, container, baseurl, o
 
 
 LifemirrorPlayer.prototype.preloadVideos = function() {
+    console.log("Lifemirror.preloadVideos");
+    
+    // Clear canvas
+    document.getElementById(Lifemirror.container).innerHTML = "";
+
+    // Write code
     for(var index in Lifemirror.playlist)
     {
         // Prepare HTML to insert
         // This is necessary to prevent the browser closing tags
         var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onended='LifemirrorPlayer.videoCallback(\""+Lifemirror.playlist[index]+"\")' id='"+Lifemirror.playlist[index]+"' style='display:none'"+Lifemirror.options+">";
-            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[index]+"/video.mp4' type='video/mp4'>";
-            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[index]+"/video.ogg' type='video/ogg'>";
+            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[index]+"' type='video/mp4'>";
+            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[index]+"' type='video/ogg'>";
             htmlToInsert += "</video>";
 
         // Insert the HTML
@@ -37,16 +45,20 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
 }
 
 LifemirrorPlayer.startPlaying = function() {
+    console.log("LifemirrorPlayer.startPlaying");
+    
     var object = document.getElementById(Lifemirror.playlist[0]);
     object.style.display = 'inline';
     object.play();
 }
 
 LifemirrorPlayer.videoCallback = function(id) {
+    
     // Hide current object
     document.getElementById(id).style.display = 'none';
 
     // Find next object in array
+    // Bug: If a video comes twice in a row, playlist will be stuck with current video!
     var index = Lifemirror.playlist.indexOf(id) + 1;
     if(index >= Lifemirror.playlist.length) index = 0;
 

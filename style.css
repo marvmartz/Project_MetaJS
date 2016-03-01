@@ -73,6 +73,6 @@ video {
     	z-index: -100;
     	-webkit-transform: translateX(-50%) translateY(-50%);
     	transform: translateX(-50%) translateY(-50%);
-    	background: url(example.jpg) no-repeat;
+    	background: gray; /* url(example.jpg) no-repeat; */
     	background-size: cover;	
 }
