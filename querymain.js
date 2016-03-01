@@ -62,6 +62,7 @@ $.ajax({
 			    attrXML[5] =  $(this).find('geselligkeit').text();
 		    	name = $(this).find('name').text();
 
+			    
 			    // get suitable videos for the beginning
 			    for(i = 0; i < attr.length; i++){
 			    
@@ -88,14 +89,33 @@ $.ajax({
 				    }
 			    
 			    } // end for
+			    
+
+			    /*
+			    for(i = 0; i < attr.length; i++){
+			    
+				    if (attrXML[i] == attr[i] && pos_begin == "true") {
+				    begin.push(name);
+				    }
+				    else if (attrXML[i] == attr[i] && pos_middle == "true") {
+				    middle.push(name);
+				    }
+				    else if (attrXML[i] == attr[i] && pos_end == "true") {
+				    end.push(name);
+				    }
+			    
+			    } // end for
+			    */
 
 
+				console.log("--------------");
 			    console.log("begin:", begin);
 			    console.log("middle", middle);
 			    console.log("end", end);
 
 
-
+				// list already doesn't contain duplicates, so this part is not needed
+			    /*
 		        var uniqueBegin = begin.filter(function(elem, pos) {
 	    			return begin.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
@@ -108,55 +128,56 @@ $.ajax({
 	    			return end.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
 
+			    console.log("-------");
+				*/
 
-			    console.log("--------------");
-
-			     // scramble chosen values from generated position-arrays and put them into respective positions of our playlist 
-			    
-
-			    
-			    random_Begin = begin[Math.floor(Math.random() * uniqueBegin.length)];		    
-			    playlist[0] = random_Begin;
-
-			    random_Middle = middle[Math.floor(Math.random() * uniqueMiddle.length)];
-			    playlist[1] = random_Middle;
-
-			    random_Middle2 =  middle[Math.floor(Math.random() * uniqueMiddle.length)];
-			    playlist[2] = random_Middle;
-
-			    random_End = end[Math.floor(Math.random() * uniqueEnd.length)];
-			    playlist[3] = random_End;
-			    
-
-
-			    // no-surprise version: every ticket generates unique playlist
-			    /*
-			    playlist.push.apply(playlist, begin);
-			    playlist.push.apply(playlist, middle);
-			    playlist.push.apply(playlist, end);
-			    */		    
-			    // remove empty, undefined cells from playlist
-			    /*
-			    playlist = playlist.filter(function(n){ return n != undefined });
-		            */
-			    // removing dublicates from final playlist
-
-
-		        var uniquePlaylist = playlist.filter(function(elem, pos) {
-	    			return playlist.indexOf(elem) == pos;
-	  		    	}); // end uniquePlaylist
-
-
-
-			    console.log("playlist:", playlist);
-			    console.log("filtered playlist:", uniquePlaylist);
-
-
-
-			    console.log("Ticket:", attr[0], attr[1], attr[2], attr[3], attr[4], attr[5]);
-		
-		
 			}) // end each
+
+		     // scramble chosen values from generated position-arrays and put them into respective positions of our playlist
+		     // after each filling the last item is excluded from the next respective array
+		    
+		    random_Begin = begin[Math.floor(Math.random() * begin.length)];		    
+		    playlist[0] = random_Begin;
+			middle = jQuery.grep(middle, function(value) { return value != random_Begin; }); // see http://stackoverflow.com/questions/3596089
+		    
+		    random_Middle = middle[Math.floor(Math.random() * middle.length)];
+		    playlist[1] = random_Middle;
+		    middle = jQuery.grep(middle, function(value) { return value != random_Middle;});
+		    
+		    random_Middle2 =  middle[Math.floor(Math.random() * middle.length)];
+		    playlist[2] = random_Middle;
+		    end = jQuery.grep(middle, function(value) { return value != random_Middle2; });
+		    
+		    random_End = end[Math.floor(Math.random() * end.length)];
+		    playlist[3] = random_End;
+		    
+		    
+
+		    // no-surprise version: every ticket generates unique playlist
+		    /*
+		    playlist.push.apply(playlist, begin);
+		    playlist.push.apply(playlist, middle);
+		    playlist.push.apply(playlist, end);
+		    */		    
+		    // remove empty, undefined cells from playlist
+		    /*
+		    playlist = playlist.filter(function(n){ return n != undefined });
+	            */
+		    // removing dublicates from final playlist
+
+		    /*
+	        var uniquePlaylist = playlist.filter(function(elem, pos) {
+    			return playlist.indexOf(elem) == pos;
+  		    	}); // end uniquePlaylist
+			*/
+
+
+	        console.log("-------");
+		    console.log("playlist:", playlist);
+		    console.log("Ticket:", attr[0], attr[1], attr[2], attr[3], attr[4], attr[5]);
+		    console.log("--------------");
+		
+
 		
 			$("#playlist").html(""); // clear old elements before .append new ones
 			$("#playlist").append('<br>'+playlist[0]+'<br>' +playlist[1]+ '<br>' +playlist[2]+ '<br>' +playlist[3]+'<br>');
