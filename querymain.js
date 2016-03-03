@@ -11,10 +11,14 @@ var begin = [];
 var middle = [];
 var end = [];
 
-var random_Begin = [];
-var random_Middle = [];
-var random_Middle2 = [];
-var random_End = [];
+var uniqueBegin = [];
+var uniqueMiddle = [];
+var uniqueEnd = [];
+
+var random_Begin;
+var random_Middle;
+var random_Middle2;
+var random_End;
 
 var playlist = [];
 
@@ -39,6 +43,9 @@ begin.length = 0;
 middle.length = 0;
 end.length = 0;
 playlist.length = 0;
+uniqueBegin.length = 0;
+uniqueMiddle.length = 0;
+uniqueEnd.length = 0;
 
 
 // retrieve data from xml with jQuery.ajax method 
@@ -115,40 +122,40 @@ $.ajax({
 
 
 				// list already doesn't contain duplicates, so this part is not needed
-			    /*
-		        var uniqueBegin = begin.filter(function(elem, pos) {
+			    
+		        uniqueBegin = begin.filter(function(elem, pos) {
 	    			return begin.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
 
-		        var uniqueMiddle = middle.filter(function(elem, pos) {
+		        uniqueMiddle = middle.filter(function(elem, pos) {
 	    			return middle.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
 
-		        var uniqueEnd = end.filter(function(elem, pos) {
+		        uniqueEnd = end.filter(function(elem, pos) {
 	    			return end.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
 
 			    console.log("-------");
-				*/
+				
 
 			}) // end each
 
 		     // scramble chosen values from generated position-arrays and put them into respective positions of our playlist
 		     // after each filling the last item is excluded from the next respective array
 		    
-		    random_Begin = begin[Math.floor(Math.random() * begin.length)];		    
+		    random_Begin = uniqueBegin[Math.floor(Math.random() * begin.length)];		    
 		    playlist[0] = random_Begin;
-			middle = jQuery.grep(middle, function(value) { return value != random_Begin; }); // see http://stackoverflow.com/questions/3596089
-		    
-		    random_Middle = middle[Math.floor(Math.random() * middle.length)];
+			uniqueMiddle = $.grep(uniqueMiddle, function(value) { return value != random_Begin; }); // see http://stackoverflow.com/questions/3596089
+
+		    random_Middle = uniqueMiddle[Math.floor(Math.random() * uniqueMiddle.length)];
 		    playlist[1] = random_Middle;
-		    middle = jQuery.grep(middle, function(value) { return value != random_Middle;});
+		    uniqueMiddle = $.grep(uniqueMiddle, function(value) { return value != random_Middle;});
 		    
-		    random_Middle2 =  middle[Math.floor(Math.random() * middle.length)];
-		    playlist[2] = random_Middle;
-		    end = jQuery.grep(middle, function(value) { return value != random_Middle2; });
+		    random_Middle2 =  uniqueMiddle[Math.floor(Math.random() * uniqueMiddle.length)];
+		    playlist[2] = random_Middle2;
+		    uniqueEnd = $.grep(uniqueMiddle, function(value) { return value != random_Middle2; });
 		    
-		    random_End = end[Math.floor(Math.random() * end.length)];
+		    random_End = uniqueEnd[Math.floor(Math.random() * uniqueEnd.length)];
 		    playlist[3] = random_End;
 		    
 		    
