@@ -147,14 +147,15 @@ $.ajax({
 		    playlist[0] = random_Begin;
 			uniqueMiddle = $.grep(uniqueMiddle, function(value) { return value != random_Begin; }); // see http://stackoverflow.com/questions/3596089
 
-		    random_Middle = uniqueMiddle[Math.floor(Math.random() * uniqueMiddle.length)];
-		    playlist[1] = random_Middle;
-		    uniqueMiddle = $.grep(uniqueMiddle, function(value) { return value != random_Middle;});
-		    
-		    random_Middle2 =  uniqueMiddle[Math.floor(Math.random() * uniqueMiddle.length)];
-		    playlist[2] = random_Middle2;
-		    uniqueEnd = $.grep(uniqueMiddle, function(value) { return value != random_Middle2; });
-		    
+		    for(i = 1; i < 3; i++){
+			    
+				random_Middle = uniqueMiddle[Math.floor(Math.random() * uniqueMiddle.length)];
+		    	playlist[i] = random_Middle;
+		    	uniqueMiddle = $.grep(uniqueMiddle, function(value) { return value != random_Middle;});
+			    
+			}
+
+		    uniqueEnd = $.grep(uniqueMiddle, function(value) { return value != random_Middle; });
 		    random_End = uniqueEnd[Math.floor(Math.random() * uniqueEnd.length)];
 		    playlist[3] = random_End;
 		    
@@ -187,7 +188,12 @@ $.ajax({
 
 		
 			$("#playlist").html(""); // clear old elements before .append new ones
-			$("#playlist").append('<br>'+playlist[0]+'<br>' +playlist[1]+ '<br>' +playlist[2]+ '<br>' +playlist[3]+'<br>');
+			for(i = 0; i < playlist.length; i++){
+			    
+				$("#playlist").append('<br>'+playlist[i]);
+
+			}
+
 	
 	        // Lifemirror Player
 	        var player = new LifemirrorPlayer();

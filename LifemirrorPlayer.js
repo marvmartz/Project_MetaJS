@@ -7,6 +7,8 @@
  */
 function LifemirrorPlayer() {}
 var Lifemirror = {};
+var countContainer = 0;
+var idx = 0;
 
 /**
  * @param playlist An array of URLs to be played - see documentation for details
@@ -28,15 +30,18 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
     
     // Clear canvas
     document.getElementById(Lifemirror.container).innerHTML = "";
+    idx = 0;
+    countContainer = 0;
 
-    // Write code
-    for(var index in Lifemirror.playlist)
+    // Write code for the 1st 4 videos to play
+    // They serve as containers for following videos to play
+    for(i = 0; i < 4; i++)
     {
         // Prepare HTML to insert
         // This is necessary to prevent the browser closing tags
-        var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onended='LifemirrorPlayer.videoCallback(\""+Lifemirror.playlist[index]+"\")' id='"+Lifemirror.playlist[index]+"' style='display:none'"+Lifemirror.options+">";
-            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[index]+"' type='video/mp4'>";
-            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[index]+"' type='video/ogg'>";
+        var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onended='LifemirrorPlayer.nextVideo()' id='"+i+"' style='display:none'"+Lifemirror.options+">";
+            htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[idx+i]+"' type='video/mp4'>";
+            //htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[idx+i]+"' type='video/ogg'>";
             htmlToInsert += "</video>";
 
         // Insert the HTML
@@ -47,28 +52,55 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
 LifemirrorPlayer.startPlaying = function() {
     console.log("LifemirrorPlayer.startPlaying");
     
-    var object = document.getElementById(Lifemirror.playlist[0]);
-    object.style.display = 'inline';
-    object.play();
+    var object = document.getElementById(countContainer);
+        object.style.display = 'inline';
+        object.play();
+
 }
 
-LifemirrorPlayer.videoCallback = function(id) {
+LifemirrorPlayer.nextVideo = function() {
     
-    // Hide current object
-    document.getElementById(id).style.display = 'none';
+    console.log("idx", idx);
+    console.log("Lifemirror.playlist.length", Lifemirror.playlist.length);
+    
+    // Counts pointer in playlist for next video
+    idx++;
 
-    // Find next object in array
-    // Bug: If a video comes twice in a row, playlist will be stuck with current video!
-    var index = Lifemirror.playlist.indexOf(id) + 1;
-    if(index >= Lifemirror.playlist.length) index = 0;
+    // As long as there are videos to play...
+    if (idx < Lifemirror.playlist.length) {
 
-    // Show next video
-    var object = document.getElementById(Lifemirror.playlist[index]);
-    object.style.display = 'inline';
-    object.play();
+        // Hide last container
+        document.getElementById(countContainer).style.display = 'none';
+
+        // Counts so we know which container to use next
+        if (countContainer <= 2) {
+            countContainer++;
+        } else {
+            countContainer = 0;
+        }
+        console.log("countContainer", countContainer);
+
+        // Set up next container
+        document.getElementById(countContainer).style.display = 'inline';
+        document.getElementById(countContainer).play();
+
+
+        // If there still are videos to preload...
+        if (Lifemirror.playlist.length - (idx+3) > 0) {
+            var video = document.getElementsByTagName('video')[ (countContainer+3)%4 ];
+            var sources = video.getElementsByTagName('source');
+            console.log("changing source");
+            console.log(sources);
+            sources[0].setAttribute("src", Lifemirror.baseurl+Lifemirror.playlist[idx+3]);
+            video.load();
+            //sources[1].setAttribute("src", Lifemirror.baseurl+Lifemirror.playlist[idx+3]);
+        }
+    }
+
 }
+
 
 LifemirrorPlayer.preloaderCallback = function() {
     Lifemirror.preloaded++;
-    if(Lifemirror.preloaded == Lifemirror.playlist.length) this.startPlaying();
+    if(Lifemirror.preloaded >= 3) this.startPlaying();
 }
