@@ -61,12 +61,11 @@ $.ajax({
 			    pos_begin = $(this).find('pos_vorne').text();
 		    	pos_middle = $(this).find('pos_mitte').text();
 		    	pos_end = $(this).find('pos_hinten').text();
-		    	attrXML[0] = $(this).find('abenteuer').text();
-			    attrXML[1] =  $(this).find('geborgenheit').text();
-			    attrXML[2] = $(this).find('koer_genuss').text();
-			    attrXML[3] =  $(this).find('kulin_genuss').text();
-			    attrXML[4] =  $(this).find('chance').text();
-			    attrXML[5] =  $(this).find('geselligkeit').text();
+		    	attrXML[0] = $(this).find('liebe').text();
+			    attrXML[1] =  $(this).find('glueck').text();
+			    attrXML[2] = $(this).find('tradition').text();
+			    attrXML[3] =  $(this).find('abenteuer').text();
+			    attrXML[4] =  $(this).find('perfektion').text();
 		    	name = $(this).find('name').text();
 
 			    

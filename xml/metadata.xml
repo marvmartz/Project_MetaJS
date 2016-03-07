@@ -1,589 +1,1269 @@
 <?xml version="1.0" encoding="utf-8"?>
 <clips>
 	<clip>
-		<name>example.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>0</geselligkeit>
-		<koer_genuss>1</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>2</chance>
+			<name>v_01_01_a.mp4</name>
+			<liebe>5</liebe>
+			<glueck>2</glueck>
+			<tradition>0</tradition>
+			<abenteuer>1</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_01_m.mp4</name>
+			<liebe>5</liebe>
+			<glueck>0</glueck>
+			<tradition>0</tradition>
+			<abenteuer>3</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_01_e.mp4</name>
+			<liebe>5</liebe>
+			<glueck>4</glueck>
+			<tradition>0</tradition>
+			<abenteuer>1</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_02_a.mp4</name>
+			<liebe>0</liebe>
+			<glueck>3</glueck>
+			<tradition>0</tradition>
+			<abenteuer>4</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_02_m.mp4</name>
+			<liebe>2</liebe>
+			<glueck>3</glueck>
+			<tradition>1</tradition>
+			<abenteuer>5</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_02_e.mp4</name>
+			<liebe>3</liebe>
+			<glueck>3</glueck>
+			<tradition>0</tradition>
+			<abenteuer>1</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0201_m.mp4</name>
+			<liebe>0</liebe>
+			<glueck>4</glueck>
+			<tradition>2</tradition>
+			<abenteuer>3</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0202_e.mp4</name>
+			<liebe>0</liebe>
+			<glueck>4</glueck>
+			<tradition>2</tradition>
+			<abenteuer>3</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0203_m.mp4</name>
+			<liebe>0</liebe>
+			<glueck>4</glueck>
+			<tradition>0</tradition>
+			<abenteuer>1</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_03_a.mp4</name>
+			<liebe>2</liebe>
+			<glueck>2</glueck>
+			<tradition>5</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_03_m.mp4</name>
+			<liebe>1</liebe>
+			<glueck>1</glueck>
+			<tradition>5</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>2</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_03_e.mp4</name>
+			<liebe>3</liebe>
+			<glueck>3</glueck>
+			<tradition>5</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0301_a.mp4</name>
+			<liebe>0</liebe>
+			<glueck>1</glueck>
+			<tradition>4</tradition>
+			<abenteuer>3</abenteuer>
+			<perfektion>1</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_04_a.mp4</name>
+			<liebe>0</liebe>
+			<glueck>1</glueck>
+			<tradition>0</tradition>
+			<abenteuer>5</abenteuer>
+			<perfektion>1</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_04_m.mp4</name>
+			<liebe>0</liebe>
+			<glueck>3</glueck>
+			<tradition>0</tradition>
+			<abenteuer>5</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_04_e.mp4</name>
+			<liebe>0</liebe>
+			<glueck>4</glueck>
+			<tradition>2</tradition>
+			<abenteuer>5</abenteuer>
+			<perfektion>1</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0401_a.mp4</name>
+			<liebe>0</liebe>
+			<glueck>3</glueck>
+			<tradition>2</tradition>
+			<abenteuer>4</abenteuer>
+			<perfektion>1</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>false</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0402_m.mp4</name>
+			<liebe>0</liebe>
+			<glueck>2</glueck>
+			<tradition>0</tradition>
+			<abenteuer>3</abenteuer>
+			<perfektion>0</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_05_a.mp4</name>
+			<liebe>0</liebe>
+			<glueck>1</glueck>
+			<tradition>2</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>5</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_05_m.mp4</name>
+			<liebe>0</liebe>
+			<glueck>1</glueck>
+			<tradition>2</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>5</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_05_e.mp4</name>
+			<liebe>0</liebe>
+			<glueck>2</glueck>
+			<tradition>2</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>5</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0501_a.mp4</name>
+			<liebe>0</liebe>
+			<glueck>2</glueck>
+			<tradition>0</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>4</perfektion>
+			<pos_vorne>true</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>false</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+			<name>v_01_0502_m.mp4</name>
+			<liebe>0</liebe>
+			<glueck>0</glueck>
+			<tradition>1</tradition>
+			<abenteuer>0</abenteuer>
+			<perfektion>5</perfektion>
+			<pos_vorne>false</pos_vorne>
+			<pos_mitte>true</pos_mitte>
+			<pos_hinten>true</pos_hinten>
+			<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_01_a.mp4</name>
+		<liebe>5</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_01_m.mp4</name>
+		<liebe>5</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
+
 	<clip>
-		<name>example2.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>3</geborgenheit>
-		<geselligkeit>2</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<name>v_02_01_e.mp4</name>
+		<liebe>5</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_0102_m.mp4</name>
+		<liebe>5</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_02_a.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>1</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_02_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>1/perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_02_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>2</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_02_0202_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>1</abenteuer>
+		<perfektion>0</perfektion>
 		<pos_vorne>false</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>example3.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>0</geborgenheit>
-		<geselligkeit>0</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>2</chance>
+		<name>v_02_03_a.mp4</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>2</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>false</pos_mitte>
-		<pos_hinten>true</pos_hinten>
+		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>example4.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>0</geborgenheit>
-		<geselligkeit>0</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<name>v_02_03_m.mp4.mp4</name>
+		<liebe>0</liebe>
+		<glueck>2</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>2</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>example5.mp4</name>
+		<name>v_02_0302_m.mp4</name>
+		<liebe>3</liebe>
+		<glueck>3</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>1</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_03_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>3</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_04_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>2</glueck>
+		<tradition>0</tradition>
 		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<perfektion>3</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_0402_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_06.mp4</name>
+		<name>v_02_04_e.mp4</name>
+		<liebe>1</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
 		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<perfektion>3</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_04_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>2</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>1</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_0502_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>2</glueck>
+		<tradition>0</tradition>
+		<abenteuer>1</abenteuer>
+		<perfektion>5</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_07.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<name>v_02_05_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>1</glueck>
+		<tradition>0</tradition>
+		<abenteuer>3</abenteuer>
+		<perfektion>5</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_05_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>5</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_02_0503_m.mp4</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>2</abenteuer>
+		<perfektion>5</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+	<clip>
+		<name>v_03_01_a.mp4</name>
+		<liebe>5</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>1</abenteuer>
+		<perfektion>0</perfektion>
 		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_01_m1.mp4</name>
+		<liebe>5</liebe>
+		<glueck>2</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_01_m2.mp4</name>
+		<liebe>5</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_01_e.mp4</name>
+		<liebe>5</liebe>
+		<glueck>2</glueck>
+		<tradition>0</tradition>
+		<abenteuer>3</abenteuer>
+		<perfektion>1</perfektion>
+		<pos_vorne>false</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_08.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<name>v_03_02_a.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>1</abenteuer>
+		<perfektion>0</perfektion>
 		<pos_vorne>true</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_02_m1.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>3</abenteuer>
+		<perfektion>4</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_02_m2.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>4</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_02_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>3</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_09.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<name>v_03_03_a.mp4</name>
+		<liebe>3</liebe>
+		<glueck>4</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
 		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_03_m1.mp4</name>
+		<liebe>2</liebe>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>1</abenteuer>
+		<perfektion>2</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_03_m2.mp4</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>2</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_03_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>3</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_04_a.mp4</name>
+		<liebe>0</liebe>
+		<glueck>2</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_04_m1.mp4</name>
+		<liebe>0</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_10.mp4</name>
+		<name>v_03_04_m2.mp4</name>
+		<liebe>0</liebe>
+		<glueck>3</glueck>
+		<tradition>0</tradition>
 		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
 		<pos_mitte>true</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_11.mp4</name>
+		<name>v_03_04_e.mp4</name>
+		<liebe>0</liebe>
+		<glueck>4</glueck>
+		<tradition>0</tradition>
 		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_12.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
+		<name>v_03_05_a.mp4</name>
+		<liebe>4</liebe>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>5</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_05_m1.mp4</name>
+		<liebe>0</liebe>
+		<glueck>4</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>5</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_05_m2.mp4</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>5</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<_media>video</_media>
+	</clip>
+	<clip>
+		<name>v_03_05_e.mp4</name>
+		<liebe>2</liebe>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>5</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
 		<pos_hinten>true</pos_hinten>
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_13.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
+		<name>v_04_01_a.mp4</name>
+                <liebe>5</liebe>
+                <glueck>4</glueck>
+                <tradition>0</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>1</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_14.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
+		<name>v_04_01_m.mp4</name>
+                <liebe>5</liebe>
+                <glueck>1</glueck>
+                <tradition>1</tradition>
+                <abenteuer>3</abenteuer>
+                <perfektion>0</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_15.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
+		<name>v_04_0102_m.mp4</name>
+                <liebe>5</liebe>
+                <glueck>4</glueck>
+                <tradition>0</tradition>
+                <abenteuer>1</abenteuer>
+                <perfektion>0</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
 	</clip>
-		<clip>
-		<name>v_17.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
+	<clip>
+		<name>v_04_01_e.mp4</name>
+                <liebe>5</liebe>
+                <glueck>4</glueck>
+                <tradition>0</tradition>
+                <abenteuer>3</abenteuer>
+                <perfektion>1</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>true</pos_hinten>
+                <_media>video</_media>
 	</clip>
-		<clip>
-		<name>v_18.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
+	<clip>
+		<name>v_04_02_a.mp4</name>
+                <liebe>3</liebe>
+                <glueck>5</glueck>
+                <tradition>1</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>1</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
 	</clip>
-		<clip>
-		<name>v_19.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
+	<clip>
+                <name>v_04_02_m.mp4</name>
+                <liebe>0</liebe>
+                <glueck>5</glueck>
+                <tradition>2</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_0202_m.mp4</name>
+                <liebe>4</liebe>
+                <glueck>5</glueck>
+                <tradition>0</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_02_e.mp4</name>
+                <liebe>3</liebe>
+                <glueck>5</glueck>
+                <tradition>1</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>true</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_03_a.mp4</name>
+                <liebe>0</liebe>
+                <glueck>0</glueck>
+                <tradition>5</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>4</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_03_m.mp4</name>
+                <liebe>1</liebe>
+                <glueck>2</glueck>
+                <tradition>5</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>3</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_0302_m.mp4</name>
+                <liebe>4</liebe>
+                <glueck>3</glueck>
+                <tradition>5</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_03_e.mp4</name>
+                <liebe>4</liebe>
+                <glueck>4</glueck>
+                <tradition>5</tradition>
+                <abenteuer>0</abenteuer>
+                <perfektion>0</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>true</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_04_a.mp4</name>
+                <liebe>0</liebe>
+                <glueck>0</glueck>
+                <tradition>0</tradition>
+                <abenteuer>5</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_04_m.mp4</name>
+                <liebe>0</liebe>
+                <glueck>2</glueck>
+                <tradition>0</tradition>
+                <abenteuer>5</abenteuer>
+                <perfektion>3</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_0402_m.mp4</name>
+                <liebe>1</liebe>
+                <glueck>2</glueck>
+                <tradition>2</tradition>
+                <abenteuer>5</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_04_e.mp4</name>
+                <liebe>0</liebe>
+                <glueck>0</glueck>
+                <tradition>0</tradition>
+                <abenteuer>5</abenteuer>
+                <perfektion>2</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>true</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_05_a.mp4</name>
+                <liebe>0</liebe>
+                <glueck>0</glueck>
+                <tradition>0</tradition>
+                <abenteuer>2</abenteuer>
+                <perfektion>5</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>false</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_05_m.mp4</name>
+                <liebe>0</liebe>
+                <glueck>0</glueck>
+                <tradition>0</tradition>
+                <abenteuer>1</abenteuer>
+                <perfektion>5</perfektion>
+                <pos_vorne>true</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_0502_m.mp4</name>
+                <liebe>0</liebe>
+                <glueck>2</glueck>
+                <tradition>0</tradition>
+                <abenteuer>3</abenteuer>
+                <perfektion>5</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>false</pos_hinten>
+                <_media>video</_media>
+        </clip>
+	<clip>
+                <name>v_04_05_e.mp4</name>
+                <liebe>0</liebe>
+                <glueck>0</glueck>
+                <tradition>0</tradition>
+                <abenteuer>1</abenteuer>
+                <perfektion>5</perfektion>
+                <pos_vorne>false</pos_vorne>
+                <pos_mitte>true</pos_mitte>
+                <pos_hinten>true</pos_hinten>
+                <_media>video</_media>
+        </clip>
+
+	<clip>	
+		
+		<name>v_05_01_a.mp4</name>
+		<liebe>5</liebe>
+<glueck>3</glueck>
+<tradition>1</tradition>
+<abenteuer>2</abenteuer>
+<perfektion>1</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
 	</clip>
-		<clip>
-		<name>v_20.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_21.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_22.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_23.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_24.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_25.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_26.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_27.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_28.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_29.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_30.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_31.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_32.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_33.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_34.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_35.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_36.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_37.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_38.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_39.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_40.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_41.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_42.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_43.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_44.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_45.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
-		<clip>
-		<name>v_46.mp4</name>
-		<abenteuer>5</abenteuer>
-		<geborgenheit>2</geborgenheit>
-		<geselligkeit>1</geselligkeit>
-		<koer_genuss>0</koer_genuss>
-		<kulin_genuss>0</kulin_genuss>
-		<chance>4</chance>
-		<pos_vorne>true</pos_vorne>
-		<pos_mitte>true</pos_mitte>
-		<pos_hinten>true</pos_hinten>
-		<_media>video</_media>
-	</clip>
+
+<clip>
+<name>v_05_01_e.mp4</name>
+<liebe>5</liebe>
+<glueck>2</glueck>
+<tradition>3</tradition>
+<abenteuer>1</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_01_m.mp4</name>
+<liebe>5</liebe>
+<glueck>3</glueck>
+<tradition>0</tradition>
+<abenteuer>4</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne></pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_0102_m.mp4</name>
+<liebe>5</liebe>
+<glueck>2</glueck>
+<tradition>0</tradition>
+<abenteuer>0</abenteuer>
+<perfektion>3</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_02_a.mp4</name>
+<liebe>1</liebe>
+<glueck>5</glueck>
+<tradition>0</tradition>
+<abenteuer>2</abenteuer>
+<perfektion>2</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_02_e.mp4</name>
+<liebe>0</liebe>
+<glueck>4</glueck>
+<tradition>1</tradition>
+<abenteuer>1</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_02_m.mp4</name>
+<liebe>3</liebe>
+<glueck>4</glueck>
+<tradition>3</tradition>
+<abenteuer>0</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>false</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_0202_m.mp4</name>
+<liebe>0</liebe>
+<glueck>5</glueck>
+<tradition>1</tradition>
+<abenteuer>1</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>false</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_03_a.mp4</name>
+<liebe>2</liebe>
+<glueck>3</glueck>
+<tradition>5</tradition>
+<abenteuer>1</abenteuer>
+<perfektion>1</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_03_e.mp4</name>
+<liebe>1</liebe>
+<glueck>3</glueck>
+<tradition>5</tradition>
+<abenteuer>1</abenteuer>
+<perfektion>4</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_03_m.mp4</name>
+<liebe>3</liebe>
+<glueck>2</glueck>
+<tradition>5</tradition>
+<abenteuer>1</abenteuer>
+<perfektion>3</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>false</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_04_a.mp4</name>
+<liebe>1</liebe>
+<glueck>3</glueck>
+<tradition>0</tradition>
+<abenteuer>5</abenteuer>
+<perfektion>2</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>false</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_04_e.mp4</name>
+<liebe>1</liebe>
+<glueck>2</glueck>
+<tradition>0</tradition>
+<abenteuer>5</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_04_m.mp4</name>
+<liebe>1</liebe>
+<glueck>3</glueck>
+<tradition>0</tradition>
+<abenteuer>5</abenteuer>
+<perfektion>0</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_05_a.mp4</name>
+<liebe>2</liebe>
+<glueck>3</glueck>
+<tradition>0</tradition>
+<abenteuer>2</abenteuer>
+<perfektion>5</perfektion>
+<pos_vorne>true</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_05_e.mp4</name>
+<liebe>1</liebe>
+<glueck>3</glueck>
+<tradition>1</tradition>
+<abenteuer>3</abenteuer>
+<perfektion>5</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_05_m.mp4</name>
+<liebe>2</liebe>
+<glueck>3</glueck>
+<tradition>1</tradition>
+<abenteuer>0</abenteuer>
+<perfektion>5</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>true</pos_mitte>
+<pos_hinten>false</pos_hinten>
+<_media>video</_media>
+</clip>
+
+<clip>
+<name>v_05_0502_m.mp4</name>
+<liebe>2</liebe>
+<glueck>2</glueck>
+<tradition>3</tradition>
+<abenteuer>0</abenteuer>
+<perfektion>5</perfektion>
+<pos_vorne>false</pos_vorne>
+<pos_mitte>false</pos_mitte>
+<pos_hinten>true</pos_hinten>
+<_media>video</_media>
+</clip>
+
+
+
 
 </clips>

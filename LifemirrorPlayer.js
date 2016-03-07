@@ -3,7 +3,7 @@
  * @author LifeMirror http://www.lifemirror.org/
  * @constructor
  * 
- * modifications done by Project_MetaJS
+ * modifications done by Martin Stelter, University of the Arts, Berlin
  */
 function LifemirrorPlayer() {}
 var Lifemirror = {};
@@ -33,8 +33,8 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
     idx = 0;
     countContainer = 0;
 
-    // Write code for the 1st 4 videos to play
-    // They serve as containers for following videos to play
+    // Write code for the 1st 4 videos
+    // They serve as containers for following videos
     for(i = 0; i < 4; i++)
     {
         // Prepare HTML to insert
@@ -60,9 +60,6 @@ LifemirrorPlayer.startPlaying = function() {
 
 LifemirrorPlayer.nextVideo = function() {
     
-    console.log("idx", idx);
-    console.log("Lifemirror.playlist.length", Lifemirror.playlist.length);
-    
     // Counts pointer in playlist for next video
     idx++;
 
@@ -80,20 +77,16 @@ LifemirrorPlayer.nextVideo = function() {
         }
         console.log("countContainer", countContainer);
 
-        // Set up next container
+        // Show next container
         document.getElementById(countContainer).style.display = 'inline';
         document.getElementById(countContainer).play();
 
-
-        // If there still are videos to preload...
+        // Replace old video with a new one (if there are still videos to place)
         if (Lifemirror.playlist.length - (idx+3) > 0) {
             var video = document.getElementsByTagName('video')[ (countContainer+3)%4 ];
             var sources = video.getElementsByTagName('source');
-            console.log("changing source");
-            console.log(sources);
             sources[0].setAttribute("src", Lifemirror.baseurl+Lifemirror.playlist[idx+3]);
             video.load();
-            //sources[1].setAttribute("src", Lifemirror.baseurl+Lifemirror.playlist[idx+3]);
         }
     }
 
