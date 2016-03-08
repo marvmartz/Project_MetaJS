@@ -22,6 +22,7 @@ LifemirrorPlayer.prototype.initialise = function(playlist, container, baseurl, o
     Lifemirror.baseurl    = baseurl;
     Lifemirror.options    = options;
     Lifemirror.preloaded  = 0;
+    Lifemirror.paused     = false;
 }
 
 
@@ -39,7 +40,7 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
     {
         // Prepare HTML to insert
         // This is necessary to prevent the browser closing tags
-        var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onClick='LifemirrorPlayer.pause()' onended='LifemirrorPlayer.nextVideo()' id='"+i+"' style='display:none'"+Lifemirror.options+">";
+        var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onended='LifemirrorPlayer.nextVideo()' id='"+i+"' style='display:none'"+Lifemirror.options+">";
             htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[idx+i]+"' type='video/mp4'>";
             //htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[idx+i]+"' type='video/ogg'>";
             htmlToInsert += "</video>";
@@ -60,12 +61,14 @@ LifemirrorPlayer.startPlaying = function() {
 
 LifemirrorPlayer.pause = function() {
     var video = document.getElementById(countContainer);
+
     if (!video.paused) {
         video.pause();
     } else {
         video.play();
     }
 }
+
 
 LifemirrorPlayer.nextVideo = function() {
     
@@ -97,9 +100,16 @@ LifemirrorPlayer.nextVideo = function() {
             sources[0].setAttribute("src", Lifemirror.baseurl+Lifemirror.playlist[idx+3]);
             video.load();
         }
+    } else {
+        this.end();
     }
 }
 
+LifemirrorPlayer.end = function () {
+    // Dispatch/Trigger/Fire event that playlist/videos have ended
+    var endEvent = new CustomEvent("videosEnded");
+    document.dispatchEvent(endEvent);
+}
 
 LifemirrorPlayer.preloaderCallback = function() {
     Lifemirror.preloaded++;

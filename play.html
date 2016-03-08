@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+                <title>metamachine v.0.02 — player</title>
+
+		<meta charset="UTF-8"> 
+
+		<link href="playerUI.css" type="text/css" rel="stylesheet">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="playHandler.js"></script>
+		<script type="text/javascript" src="LifemirrorPlayer.js"></script>
+	</head>
+
+	<body>
+		<div id="film"> </div>
+		<div id="player" onClick="LifemirrorPlayer.pause()">
+			
+			<!-- UI -->
+			<div id="header">
+				<div id="ticketLabel">generiert für</div>
+				<div id="ticketBox"></div>
+			</div>
+			<div id="footer">
+				<div id="play"></div>
+				<div id="toggleFullscreen"></div>
+			</div>
+
+		</div>
+		<div id="end">
+		<div id="middle">
+
+			<!-- End Screen -->
+			<div id="play" onClick="window.location.reload()"></div>
+		</div>
+		</div>
+	</body>
+
+</html>

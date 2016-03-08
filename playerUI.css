@@ -1,0 +1,148 @@
+/* style for playerUI
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700,400);
+
+
+em, p, span, body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	height: auto;
+	color: white;
+	font-size: 14px;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#ticketBox {
+	padding-left: 15px;
+}
+
+#ticketLabel {
+	padding: 15px 0 0 15px;
+	font-size: 11px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+#ticket {
+	padding: 0 20px 5px 0px;
+	display: inline-block;
+}
+
+#player {
+	-webkit-transition: all 0.5s ease-in-out;
+  	-moz-transition: all 0.5s ease-in-out;
+  	-o-transition: all 0.5s ease-in-out;
+ 	transition: all 0.5s ease-in-out;
+	opacity: 0;
+	transition-delay: 2.0s;
+	position: absolute;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#player:hover {
+	-webkit-transition: all 0.5s ease-in-out;
+  	-moz-transition: all 0.5s ease-in-out;
+  	-o-transition: all 0.5s ease-in-out;
+ 	transition: all 0.5s ease-in-out;
+	opacity: 1.0;
+}
+
+
+
+#header {
+	padding-bottom: 15px;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	color: white;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background: rgba(51,51,51,0.5)
+}
+
+#footer{
+	display: none; /* Footer is work in progress */
+	padding-top:15px;
+	width: 100%;
+	height: auto;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax */
+}
+
+#play {
+	margin-left:15px;
+	margin-bottom: 15px;
+	float: left;
+
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #ffffff;	
+}
+
+#toggleFullscreen {
+	padding-right: 15px;
+	float: right;
+}
+
+video {
+
+	position: fixed;
+	top: 50%;
+    	left: 50%;
+    	min-width: 100%;
+    	min-height: 100%;
+    	width: auto;
+    	height: auto;
+    	z-index: -100;
+    	-webkit-transform: translateX(-50%) translateY(-50%);
+    	transform: translateX(-50%) translateY(-50%);
+    	background: gray; /* url(example.jpg) no-repeat; */
+    	background-size: cover;	
+}
+
+
+#end {
+	display: none;
+	position: absolute;
+	background: rgba(51,51,51, 0.5);
+	top: 0;
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+#middle {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
