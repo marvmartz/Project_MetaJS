@@ -370,7 +370,7 @@
 		<glueck>5</glueck>
 		<tradition>0</tradition>
 		<abenteuer>0</abenteuer>
-		<perfektion>1/perfektion>
+		<perfektion>1</perfektion>
 		<pos_vorne>true</pos_vorne>
 		<pos_mitte>false</pos_mitte>
 		<pos_hinten>true</pos_hinten>

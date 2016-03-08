@@ -1,4 +1,8 @@
 // metamachine with jQuery
+//
+//
+//
+//
 
 $(document).ready(function(){
 
@@ -33,7 +37,6 @@ attr[1] = $('#attr2').val();
 attr[2] = $('#attr3').val();
 attr[3] = $('#attr4').val();
 attr[4] = $('#attr5').val();
-attr[5] = $('#attr6').val();
 
 
 var attrXML = []; // for comparison
@@ -55,6 +58,9 @@ $.ajax({
 	dataType: "xml",
 
 		success: function(xml){
+			// Note: If playlist remains emty/undefined, try
+			// - check if XML is 100% correct, no misspellings, no broken tags etc.
+			// - clear browser cache
 		$(xml).find('clip').each(
 			function(){
 		
@@ -67,7 +73,6 @@ $.ajax({
 			    attrXML[3] =  $(this).find('abenteuer').text();
 			    attrXML[4] =  $(this).find('perfektion').text();
 		    	name = $(this).find('name').text();
-
 			    
 			    // get suitable videos for the beginning
 			    for(i = 0; i < attr.length; i++){
@@ -97,31 +102,7 @@ $.ajax({
 			    } // end for
 			    
 
-			    /*
-			    for(i = 0; i < attr.length; i++){
-			    
-				    if (attrXML[i] == attr[i] && pos_begin == "true") {
-				    begin.push(name);
-				    }
-				    else if (attrXML[i] == attr[i] && pos_middle == "true") {
-				    middle.push(name);
-				    }
-				    else if (attrXML[i] == attr[i] && pos_end == "true") {
-				    end.push(name);
-				    }
-			    
-			    } // end for
-			    */
-
-
-				console.log("--------------");
-			    console.log("begin:", begin);
-			    console.log("middle", middle);
-			    console.log("end", end);
-
-
-				// list already doesn't contain duplicates, so this part is not needed
-			    
+				// Filter out the duplicates
 		        uniqueBegin = begin.filter(function(elem, pos) {
 	    			return begin.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
@@ -134,14 +115,10 @@ $.ajax({
 	    			return end.indexOf(elem) == pos;
 	  		    	}); // end uniquePlaylist 
 
-			    console.log("-------");
-				
-
 			}) // end each
 
-		     // scramble chosen values from generated position-arrays and put them into respective positions of our playlist
-		     // after each filling the last item is excluded from the next respective array
-		    
+		    // scramble chosen values from generated position-arrays and put them into respective positions of our playlist
+		    // after each filling the last item is excluded from the next respective array
 		    random_Begin = uniqueBegin[Math.floor(Math.random() * begin.length)];		    
 		    playlist[0] = random_Begin;
 			uniqueMiddle = $.grep(uniqueMiddle, function(value) { return value != random_Begin; }); // see http://stackoverflow.com/questions/3596089
@@ -157,43 +134,17 @@ $.ajax({
 		    uniqueEnd = $.grep(uniqueMiddle, function(value) { return value != random_Middle; });
 		    random_End = uniqueEnd[Math.floor(Math.random() * uniqueEnd.length)];
 		    playlist[3] = random_End;
-		    
-		    
-
-		    // no-surprise version: every ticket generates unique playlist
-		    /*
-		    playlist.push.apply(playlist, begin);
-		    playlist.push.apply(playlist, middle);
-		    playlist.push.apply(playlist, end);
-		    */		    
-		    // remove empty, undefined cells from playlist
-		    /*
-		    playlist = playlist.filter(function(n){ return n != undefined });
-	            */
-		    // removing dublicates from final playlist
-
-		    /*
-	        var uniquePlaylist = playlist.filter(function(elem, pos) {
-    			return playlist.indexOf(elem) == pos;
-  		    	}); // end uniquePlaylist
-			*/
+		 
 
 
-	        console.log("-------");
-		    console.log("playlist:", playlist);
-		    console.log("Ticket:", attr[0], attr[1], attr[2], attr[3], attr[4], attr[5]);
-		    console.log("--------------");
-		
-
-		
+		    // Prompt playlist in HTML	
 			$("#playlist").html(""); // clear old elements before .append new ones
 			for(i = 0; i < playlist.length; i++){
-			    
 				$("#playlist").append('<br>'+playlist[i]);
-
 			}
 
-	
+
+
 	        // Lifemirror Player
 	        var player = new LifemirrorPlayer();
 	        var url = window.location.href; // returns URL
@@ -201,11 +152,13 @@ $.ajax({
 	       
 		        player.initialise(playlist, "film", dir+"/vid/", null);  // see LifemirrorPlayer.js lines 12—17
 		        player.preloadVideos();
+		    
 
 		}, // end success: function(xml)
 		
 		error: function(){ 
 			alert("something's wrong Diane");
+
 		} // end error handler
 
 

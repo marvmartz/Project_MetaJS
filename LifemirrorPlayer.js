@@ -1,5 +1,5 @@
 /**
- * A classy way to play HTML5 videos on a loop without gaps
+ * A classy way to seamless play many HTML5 videos 
  * @author LifeMirror http://www.lifemirror.org/
  * @constructor
  * 
@@ -39,7 +39,7 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
     {
         // Prepare HTML to insert
         // This is necessary to prevent the browser closing tags
-        var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onended='LifemirrorPlayer.nextVideo()' id='"+i+"' style='display:none'"+Lifemirror.options+">";
+        var htmlToInsert = "<video height='100%' width='100%' preload oncanplaythrough='LifemirrorPlayer.preloaderCallback()' onClick='LifemirrorPlayer.pause()' onended='LifemirrorPlayer.nextVideo()' id='"+i+"' style='display:none'"+Lifemirror.options+">";
             htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[idx+i]+"' type='video/mp4'>";
             //htmlToInsert += "<source src='"+Lifemirror.baseurl+Lifemirror.playlist[idx+i]+"' type='video/ogg'>";
             htmlToInsert += "</video>";
@@ -52,10 +52,19 @@ LifemirrorPlayer.prototype.preloadVideos = function() {
 LifemirrorPlayer.startPlaying = function() {
     console.log("LifemirrorPlayer.startPlaying");
     
-    var object = document.getElementById(countContainer);
-        object.style.display = 'inline';
-        object.play();
+    var video = document.getElementById(countContainer);
+        video.style.display = 'inline';
+        video.play();
 
+}
+
+LifemirrorPlayer.pause = function() {
+    var video = document.getElementById(countContainer);
+    if (!video.paused) {
+        video.pause();
+    } else {
+        video.play();
+    }
 }
 
 LifemirrorPlayer.nextVideo = function() {
@@ -77,7 +86,7 @@ LifemirrorPlayer.nextVideo = function() {
         }
         console.log("countContainer", countContainer);
 
-        // Show next container
+        // Show & play next container
         document.getElementById(countContainer).style.display = 'inline';
         document.getElementById(countContainer).play();
 
@@ -89,7 +98,6 @@ LifemirrorPlayer.nextVideo = function() {
             video.load();
         }
     }
-
 }
 
 
