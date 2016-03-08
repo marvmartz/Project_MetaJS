@@ -3,8 +3,11 @@ metamachine - rewritten for the web!
 
 ## Features
 - Generate playlist of 4 elements
-- Autoplay all vidoes in loop via LifemirrorPlayer
+- Autoplay all videos once
+- Can handle even very long playlists (tested with 20 videos)
+
+## Issues
+- Bad performance
 
 ## Bugs
-- querymain.js: playlist contains duplicates
-- LifemirrorPlayer.js: If a video comes twice in a row (duplicate), playlist will be stuck with current video
+no Bugs known yet
